@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #34495E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    display: flex;
+    gap: 40px; /* Increased spacing between form and map */
+    background-color: #ffffff;
+    padding: 30px; /* More padding for better aesthetics */
+    border-radius: 15px; /* Rounded corners for modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow for emphasis */
+    max-width: 1200px;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    flex: 1;
+    min-width: 350px; /* Slightly wider for better form layout */
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px; /* More spacing for clarity */
+    font-size: 28px;
+    color: #2C3E50; /* Darker heading color */
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    color: #34495E; /* Subtle contrast for labels */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Softer edges for inputs */
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #34495E; /* Highlight inputs on focus */
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 120px; /* Increased height for better readability */
+  }
+  
+  .send-button {
+    background-color: #34495E;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .send-button:hover {
+    background-color: #2C3E50;
+    transform: scale(1.05); /* Subtle scaling effect */
+  }
+  
+  /* Map Container */
+  .map-container {
+    flex: 1;
+    min-width: 350px;
+  }
+  
+  .map-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: #2C3E50;
+  }
+  
+  .map-container iframe {
+    border-radius: 10px; /* Rounded map for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for map */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      gap: 30px; /* Maintain spacing between stacked items */
+    }
+  }
+  
